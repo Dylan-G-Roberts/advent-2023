@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <ctype.h>
 
-#define MAX_LINE 140 
+#define MAX_LINE 10 
 
 int is_period(int c) {
     return c == 46;
