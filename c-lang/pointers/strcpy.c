@@ -25,3 +25,10 @@ void v2strcpy(char *s, char *t)
     while ((*s++ = *t++) != '\0')
         ;
 }
+
+/* strcpy:  copy t to s; pointer version 3 */
+void v3strcpy(char *s, char *t)
+{
+    while ((*s++ = *t++))
+        ;
+}
