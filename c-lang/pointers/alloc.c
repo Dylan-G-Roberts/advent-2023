@@ -1,3 +1,4 @@
+#include <stdio.h>
 #define ALLOCSIZE 10000  /* avail space */
 
 static char allocbuff[ALLOCSIZE];
@@ -8,7 +9,7 @@ char *alloc(int n) {    /* returns pointer to next free pos */
       allocp += n;
       return allocp - n; /* old p */
    } else     /* not enough room */
-       return 0;
+       return NULL;
 }
 
 void afree(char *p)
